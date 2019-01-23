@@ -38,10 +38,9 @@ public:
         driver::RenderPassParams params;
     };
 
-    Handle<HwTexture> getTexture(FrameGraphResource r,
-            driver::TextureUsage attachment = driver::TextureUsage::DEFAULT) const noexcept;
+    Handle <HwTexture> getTexture(FrameGraphResource r) const noexcept;
 
-    RenderTarget const& getRenderTarget(FrameGraphResource r) const noexcept;
+    RenderTarget const& getRenderTarget(FrameGraphRenderTarget r) const noexcept;
 
     FrameGraphResource::Descriptor const& getDescriptor(FrameGraphResource r) const noexcept;
 
